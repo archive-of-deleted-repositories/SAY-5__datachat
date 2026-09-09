@@ -12,6 +12,10 @@ dist/
 node_modules/
 frontend/dist/
 frontend/.vite/
+frontend/test-dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo
 *.db
 *.db-journal
 .env

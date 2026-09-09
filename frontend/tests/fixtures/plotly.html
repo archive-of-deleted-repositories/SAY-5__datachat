@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8"><title>Plotly attribution regression fixture</title></head>
+  <body>
+    <div id="chart" style="width:800px;height:600px"></div>
+    <script type="module">
+      import Plotly from "plotly.js-dist-min";
+      window.renderFigure = (data, layout) => Plotly.newPlot("chart", data, layout, {displaylogo: false});
+      window.purgeFigure = () => Plotly.purge("chart");
+    </script>
+  </body>
+</html>
